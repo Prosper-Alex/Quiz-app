@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Start Screen -->
+    <div class="container" id="start-screen">
+      <h2>Welcome to the JavaScript Quiz!</h2>
+      <button class="btn" id="start-btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div class="container hidden" id="quiz-container">
+      <h2 id="question">Question will appear here</h2>
+      <div id="answer-buttons"></div>
+      <p class="feedback hidden" id="feedback"></p>
+      <button class="btn hidden" id="prev-btn">Previous Question</button>
+      <button class="btn hidden" id="next-btn">Next Question</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div class="container hidden" id="result-screen">
+      <h2>Quiz Finished!</h2>
+      <p class="result" id="result"></p>
+      <button class="btn" id="restart-btn">Restart Quiz</button>
+    </div>
+
+    <script src="/questions.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
