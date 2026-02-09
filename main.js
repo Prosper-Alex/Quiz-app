@@ -50,6 +50,7 @@ function renderQuestion(question) {
   });
 }
 
+
 async function startQuiz() {
   try {
     startBtnEl.textContent = "Loading...";
@@ -71,6 +72,7 @@ async function startQuiz() {
   }
 }
 
+
 function prevQuestion() {
   if (state.currentQuestionIndex > 0) {
     state.currentQuestionIndex--;
@@ -79,6 +81,7 @@ function prevQuestion() {
   }
 }
 
+
 function nextQuestion() {
   if (state.currentQuestionIndex < quizData.length - 1) {
     state.currentQuestionIndex++;
@@ -86,6 +89,7 @@ function nextQuestion() {
     feedbackEl.classList.add("hidden");
   }
 }
+
 
 function answerQuestion(answerIndex) {
   feedbackEl.classList.remove("hidden");
